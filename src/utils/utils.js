@@ -12,7 +12,6 @@ const readfile = async () => {
 const Writefile = async (talkers) => {
   await fs.writeFile('src/talker.json', talkers);
 };
-
 const generateId = () => crypto.randomBytes(8).toString('hex');
 
 module.exports = {

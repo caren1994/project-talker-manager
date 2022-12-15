@@ -16,11 +16,12 @@ validateName, validateAge, validateTalk,
 validateWatcheAt, continuationValidateRate,
 validateRate, async (req, res) => {
 const { id } = req.params;
+const idTalker = Number(id);
 const talkers = await readfile();
-const talkerI = talkers.indexOf((t) => t.id === Number(id));
-talkers.splice(talkerI, 1);
-const talker = { id: talkers.length + 1, ...req.body };
-talkers.push(talker);
+const talkerI = talkers.findIndex((t) => t.id === Number(id));
+
+const talker = { id: idTalker, ...req.body };
+talkers[talkerI] = talker;
 await Writefile(JSON.stringify(talkers, null, 2));
 return res.status(200).json(talker);
 });
