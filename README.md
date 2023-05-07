@@ -1,13 +1,33 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto TalkerManager API
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da Trybe.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+  <summary><strong>O que foi feito</strong></summary></br>
+
+  Neste projeto desenvolvi uma API de cadastro de talkers (palestrantes) em que será possível cadastrar, visualizar, pesquisar, editar e excluir informações.
+
+  A aplicação foi desenvolvida com:
+
+- `Node.js`
+- `docker`
+- `docker-compose`
+- `Express`;
+
+  <summary><strong>Como rodar o projeto</strong></summary></br>
+
+  **Com Docker:**
+
+  ** :warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior.
+
+- `docker-compose up -d --build`
+- `docker exec -it talker_manager bash`
+- `npm install`
+- `npm run dev`
+
+**Localmente:**
+
+**Necessita ter um banco de dados(MySql) instalado localmente**
+
+- `npm install`
+- `npm run dev`
+
